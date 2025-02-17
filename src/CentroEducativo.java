@@ -30,7 +30,9 @@ public class CentroEducativo {
             edad = Integer.parseInt(edadT);
         }catch(NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Ingrese una edad valida");
+            edad=-1;
         }
+
         while(edad>=0) {
             edades+=edad;
             alumnos++;
@@ -46,6 +48,7 @@ public class CentroEducativo {
                 edad=-1;
             }
         }
+
         media=edades/alumnos;
         JOptionPane.showMessageDialog(null, "La media es → "+media+" \nla suma de todas las edades es → "+edades+ " \nLos mayores de edad son → "+mayoresEdad+" \nEl número total de alumnos son → "+alumnos);
     }
