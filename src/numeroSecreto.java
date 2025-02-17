@@ -18,9 +18,9 @@ public class numeroSecreto {
         int intentos=0;
         while (numSecreto!=numeroUser && numeroUser!=-1){
             if (numSecreto>numeroUser){
-                JOptionPane.showMessageDialog(null, "El numero secreto es mayor al introducido");
+                JOptionPane.showMessageDialog(null, "El número secreto es mayor al introducido");
             } else {
-                JOptionPane.showMessageDialog(null, "El numero secreto es menor al introducido");
+                JOptionPane.showMessageDialog(null, "El número secreto es menor al introducido");
             }
 
             intentos++;
