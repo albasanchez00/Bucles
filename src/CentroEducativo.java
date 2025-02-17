@@ -9,9 +9,10 @@ import java.util.Scanner;
     *  El número de alumnos.
     *  Cuantos son mayorse de edad.
 * Contadores:
-    * Contador → suma de las edades.
-    * Contador → número de alumnos.
-    * Contador → mayores de edad.
+    * Contador Edades → suma de las edades.
+    * Contador Media → Calcula la media de todas las edades.
+    * Contador Alumnos → Calcula el número total de alumnos.
+    * Contador Mayores Edad → Calcula los alumnos que son mayores de edad.
 * OJO → Los datos se mostrarán una vez se salga del bucle.
 */
 
