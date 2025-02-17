@@ -32,9 +32,9 @@ public class OtroWhile {
             try {
                 num=Double.parseDouble(numT); //→ Pasamos el numero a double
             }catch (NumberFormatException e) {
-                mensaje="Ingrese un número válido";
-                JOptionPane.showMessageDialog(null, mensaje);
-                num=0;
+                JOptionPane.showMessageDialog(null, "Ingrese un número válido");
+                JOptionPane.showMessageDialog(null, "Adios :)");
+                num=0; //→ Obligo a que salga del bucle.
             }
         }
     }
