@@ -27,7 +27,7 @@ public class ContadorDinero {
         }
 
         while (banco!=-1 && hucha!=-1 && bolsillos!=-1 && cajon!=-1) {
-            JOptionPane.showMessageDialog(null, "Aqui entra bien");
+            dinero=banco+hucha+bolsillos+cajon;
             bancoT= JOptionPane.showInputDialog("Ingrese el dinero actual en su banco → ");
             huchaT= JOptionPane.showInputDialog("Ingrese el dinero actual en su hucha → ");
             bolsilloT= JOptionPane.showInputDialog("Ingrese el dinero actual en sus bolsillos → ");
@@ -41,9 +41,8 @@ public class ContadorDinero {
                 JOptionPane.showMessageDialog(null, "La cantidad ingresada no es válida.");
                 banco=-1;
             }
-            dinero=banco+hucha+bolsillos+cajon;
-            JOptionPane.showMessageDialog(null, "La suma total es = "+dinero);
         }
+        JOptionPane.showMessageDialog(null, "La suma total es = "+dinero+"€");
 
 
 
