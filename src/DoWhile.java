@@ -58,7 +58,5 @@ public class DoWhile {
                 JOptionPane.showMessageDialog(null, mensaje);
             }
         }while(!opcion.equals("7")); //Repite la interacción mientras "opción" sea distinto a "7"
-
-
     }
 }
