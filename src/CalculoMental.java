@@ -17,25 +17,37 @@ import java.util.Scanner;
 public class CalculoMental {
     public static void main(String[] args) {
        Scanner sc = new Scanner(System.in);
-       int respuesta;
-       int num1,num2;
-       int respuestaCorrecta;
-       int contador=0;
+       int respuesta=0, respuestaCorrecta=0;
+       int num1, num2, opRandom, aciertos=0;
        String mensaje="";
-
         do {
-            respuesta=0;
             num1=(int)(Math.random()*101);
             num2=(int)(Math.random()*101);
-            respuestaCorrecta=num1+num2;
-            String respuestaT= JOptionPane.showInputDialog("Indique la suma de "+num1+" + "+num2+" = ");
-            try {
-                respuesta=Integer.parseInt(respuestaT);
-            }catch(NumberFormatException e) {
-                mensaje="El valor introducido no es valido";
+            opRandom=(int)(Math.random()*2);
+            System.out.println(opRandom);
+            switch (opRandom){
+                case 0: {
+                    mensaje="Indique la suma de "+num1+" + "+num2+" = ";
+                    respuestaCorrecta=num1+num2;
+                }
+                case 1: {
+                    mensaje="Indique la resta de "+num1+" - "+num2+" = ";
+                    respuestaCorrecta=num1-num2;
+                }
+                case 2: {
+                    mensaje="Indique la multiplicación de "+num1+" * "+num2+" = ";
+                    respuestaCorrecta=num1*num2;
+                }
             }
-            contador++;
-        }while (respuesta==respuestaCorrecta);
-        JOptionPane.showMessageDialog(null, "El numero de aciertos son: " + contador);
+
+            String pregunta=JOptionPane.showInputDialog(mensaje);
+            try {
+                respuesta=Integer.parseInt(pregunta);
+            }catch(NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "El valor no es válido");
+            }
+            aciertos++;
+        }while (respuestaCorrecta==respuesta);
+        JOptionPane.showMessageDialog(null, "Has acertado "+(aciertos-1));
     }
 }
