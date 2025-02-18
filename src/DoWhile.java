@@ -5,6 +5,7 @@ public class DoWhile {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        int op=0; //Inicializamos opcion en cada iteración
         String mensaje="";
         String opcion;
         do{
@@ -25,7 +26,6 @@ public class DoWhile {
                     
                     [7]→ Salir""");
 
-            int op=0; //Inicializamos opcion en cada iteración
             try {
                 op=Integer.parseInt(opcion); //Convertimos el valor de String a Numérico
             }catch (Exception e) {
@@ -33,9 +33,10 @@ public class DoWhile {
             }
 
             if (op>=1 && op<=6) { //Solo entrará a pedir los números si las opciones son correctas.
+                int a=0, b=0;
                 String num1T= JOptionPane.showInputDialog("Indique el 1º número → ");
                 String num2T=JOptionPane.showInputDialog("Indique el 2º número → ");
-                int a=0, b=0;
+
                 try {  //Intento pasar el dato de texto a numérico.
                     a = Integer.parseInt(num1T);
                     b = Integer.parseInt(num2T);
