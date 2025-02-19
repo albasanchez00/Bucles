@@ -35,13 +35,11 @@ public class Actividad_Propuesta_4 {
             }
 
             switch (op) {
-                case 1:
-                    System.out.println(saludo);
-                case 2:
-                    System.out.println(fecha);
+                case 1->{JOptionPane.showMessageDialog(null,saludo);}
+                case 2->{ JOptionPane.showMessageDialog(null,fecha);}
             }
         }while (op!=3);
-        System.out.println("Adios");;
+        JOptionPane.showMessageDialog(null,"Adiós");
 
     }
 }
