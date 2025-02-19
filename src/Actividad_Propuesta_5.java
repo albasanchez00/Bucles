@@ -9,15 +9,13 @@ public class Actividad_Propuesta_5 {
         Scanner sc=new Scanner(System.in);
 
         int n;
-        double fac;
+        double fac=1;
 
         System.out.println("Introduce un número -> ");
         n= sc.nextInt();
-        System.out.println("Introduce el factorial -> ");
-        fac= sc.nextInt();
 
         for (int i=n; i>0; i--){
-            fac=fac+i;
+            fac*=i;
         }
         System.out.println("El fatorial de " + n + " es: " + fac);
     }
