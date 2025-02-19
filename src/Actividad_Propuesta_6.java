@@ -1,0 +1,26 @@
+import javax.swing.*;
+
+public class Actividad_Propuesta_6 {
+    public static void main(String[] args) {
+
+        int calificaciones=0, alumnos=0, suspensos=0, aprobados=0;
+        String edadT="";
+
+        do {
+            alumnos++;
+            edadT= JOptionPane.showInputDialog("Ingrese la nota del alumno → ");
+            try {
+                calificaciones = Integer.parseInt(edadT);
+            }catch(NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Ingrese una edad valida");
+            }
+
+            if (calificaciones<5) {
+                suspensos++;
+            }else{
+                aprobados++;
+            }
+        }while (alumnos!=5);
+        JOptionPane.showMessageDialog(null, "Alumnos Suspensos → "+suspensos+" \nAlumnos Aprovados → "+aprobados);
+    }
+}
