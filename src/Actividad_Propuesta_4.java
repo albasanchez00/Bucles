@@ -13,9 +13,9 @@ import java.util.Scanner;
 public class Actividad_Propuesta_4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String saludo="Hola, ¿que tal?";
         // El tipo fecha puede ser localDate o LocalDateTime
         LocalDate fecha=LocalDate.now();
+        String saludo="Hola, ¿que tal?";
         String opcion = "";
         int op=0;
 
@@ -32,7 +32,7 @@ public class Actividad_Propuesta_4 {
             try {
                 op=Integer.parseInt(opcion); //Convertimos el valor de String a Numérico
             }catch (Exception e) {
-                System.out.println("Opcion invalida");
+                JOptionPane.showMessageDialog(null,"La opción indicada es invalida.");
             }
 
             switch (op) {
