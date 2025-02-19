@@ -38,9 +38,9 @@ public class Actividad_Propuesta_4 {
             switch (op) {
                 case 1->{JOptionPane.showMessageDialog(null,saludo);}
                 case 2->{ JOptionPane.showMessageDialog(null,fecha);}
+                case 3->{JOptionPane.showMessageDialog(null,"Adios");}
+                default -> {JOptionPane.showMessageDialog(null,"Opción incorrecta");}
             }
         }while (op!=3);
-        JOptionPane.showMessageDialog(null,"Adiós");
-
     }
 }
