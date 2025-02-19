@@ -29,6 +29,6 @@ public class Actividad_Propuesta_2 {
                 mayoresEdad++;
             }
         } while (personas <= 10);
-        JOptionPane.showMessageDialog(null, "Alumnos mayores de edad: " + mayoresEdad + " \nAlumnos menores de edad: " + menoresEdad);
+        JOptionPane.showMessageDialog(null, "Alumnos mayores de edad: " + (mayoresEdad-1) + " \nAlumnos menores de edad: " + (menoresEdad-1));
     }
 }
