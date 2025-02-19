@@ -1,9 +1,10 @@
 import javax.swing.*;
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Scanner;
 
-/* Crear un menú que se repita hasta que el usuario elija la opción salir.
-* Tendrá 3 opciones:
+/* Actividad Propuesta 4. Crear un menú que se repita hasta que el usuario elija la opción salir.
+* Tendrá 3 opciones →
     1. Hola que tal (saludo)
     2. Fecha Actual
     3. Salir
@@ -13,7 +14,7 @@ public class Actividad_Propuesta_4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String saludo="Hola, ¿que tal?";
-        // El tipo fecha peude ser localDate o LocalDateTime
+        // El tipo fecha puede ser localDate o LocalDateTime
         LocalDate fecha=LocalDate.now();
         String opcion = "";
         int op=0;
