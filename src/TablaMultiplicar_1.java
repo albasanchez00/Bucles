@@ -25,9 +25,7 @@ public class TablaMultiplicar_1 {
             1. Interrumpe el bucle → Break
             2. Salta la iteracion actual, y continua con el bucle → Continue
         */
-
-
-        System.out.println("\n** SALIDA INTERRUMPIDA 'BREAK' **");
+        System.out.println("\n** SALIDA ANTICIPADA 'BREAK' **");
         for (int i=1;i<=10;i++){
             if (i==6){//Muestra hasta el número indicado
                 break; //salir - interrumpir
@@ -36,8 +34,7 @@ public class TablaMultiplicar_1 {
             }
         }
 
-
-        System.out.println("\n** SALIDA INTERRUMPIDA 'CONTINUE' **");
+        System.out.println("\n** SALIDA ANTICIPADA 'CONTINUE' **");
         for (int i=1;i<=10;i++){
             if (i==6){//Salta el número indicado
                 continue; //saltar
@@ -45,6 +42,9 @@ public class TablaMultiplicar_1 {
                 System.out.println(numero + " x " + i + " = " + (numero*i));
             }
         }
+
+
+
         sc.close();
     }
 }
