@@ -1,7 +1,9 @@
 import javax.swing.*;
+import java.util.Scanner;
 
 public class Actividad_Propuesta_6 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
         int calificaciones=0, alumnos=0, suspensos=0, aprobados=0;
         String edadT="";

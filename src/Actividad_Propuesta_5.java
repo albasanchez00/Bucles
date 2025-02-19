@@ -7,10 +7,15 @@ import java.util.Scanner;
 public class Actividad_Propuesta_5 {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
+
         int n;
-        double fac=1;
+        double fac;
+
         System.out.println("Introduce un número -> ");
         n= sc.nextInt();
+        System.out.println("Introduce el factorial -> ");
+        fac= sc.nextInt();
+
         for (int i=n; i>0; i--){
             fac=fac+i;
         }
