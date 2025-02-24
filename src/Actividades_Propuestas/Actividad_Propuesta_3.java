@@ -1,4 +1,4 @@
-import javax.swing.*;
+package Actividades_Propuestas;
 
 /* Actividad Propuesta 3. Mostrar un saludo mediante un bucle 10 veces.
 * Mosrtar 10 veces 'Hola' en la consola

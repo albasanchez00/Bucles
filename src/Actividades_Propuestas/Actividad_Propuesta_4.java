@@ -1,6 +1,7 @@
+package Actividades_Propuestas;
+
 import javax.swing.*;
 import java.time.LocalDate;
-import java.time.LocalTime;
 import java.util.Scanner;
 
 /* Actividad Propuesta 4. Crear un menú que se repita hasta que el usuario elija la opción salir.

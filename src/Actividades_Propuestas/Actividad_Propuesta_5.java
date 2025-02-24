@@ -1,3 +1,5 @@
+package Actividades_Propuestas;
+
 import java.util.Scanner;
 
 /* Actividad Propuesta 5. Pedir un número y calcular su factorial.

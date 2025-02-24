@@ -1,3 +1,5 @@
+package Actividades_Propuestas;
+
 import java.util.Scanner;
 
 /* Actividad Propuesta 1. Generar un bucle que muestres el incremento de la edad mediante un bucle.

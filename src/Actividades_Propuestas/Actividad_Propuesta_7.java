@@ -1,4 +1,4 @@
-
+package Actividades_Propuestas;
 /* Actividad Propuesta 7. Dadas 6 notas, muestra lo siguiente:
     *Escribir la cantidad de alumnos aprobados, condicionados (nota igual a cuatro) y suspensos
 */
